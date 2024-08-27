@@ -1,35 +1,5 @@
-/* Escreva um programa que leia o valor de 3 ângulos de um triângulo e escreva se o triângulo é Acutângulo, Retângulo ou Obtusângulo.
-* Triângulo Retângulo: possui um ângulo reto. (igual a 90º)
-* Triângulo Obtusângulo: possui um ângulo obtuso. (maior que90º)
-* Triângulo Acutângulo: possui três ângulos agudos. (menor que 90º) */
+/* Escreva um programa que leia o valor de 3 ï¿½ngulos de um triï¿½ngulo e escreva se o triï¿½ngulo ï¿½ Acutï¿½ngulo, Retï¿½ngulo ou Obtusï¿½ngulo.
+* Triï¿½ngulo Retï¿½ngulo: possui um ï¿½ngulo reto. (igual a 90ï¿½)
+* Triï¿½ngulo Obtusï¿½ngulo: possui um ï¿½ngulo obtuso. (maior que90ï¿½)
+* Triï¿½ngulo Acutï¿½ngulo: possui trï¿½s ï¿½ngulos agudos. (menor que 90ï¿½) */
 
-package aula01;
-
-import java.util.Scanner;
-
-public class Exerc28 {
-	public static void main(String[] args) {
-		Scanner input = new Scanner(System.in);
-		
-		double angulo1, angulo2, angulo3;
-		
-		System.out.println("Digite os três ângulos do triângulo: ");
-		angulo1 = input.nextDouble();
-		angulo2 = input.nextDouble();
-		angulo3 = input.nextDouble();
-		
-		if (angulo1 < 90 && angulo2 < 90 && angulo3 < 90) {
-			System.out.print("Este triângulo é acutângulo!");
-		}
-		
-		else if (angulo1 == 90 || angulo2 == 90 || angulo3 == 90) {
-			System.out.print("Este triângulo é retângulo!");
-		}
-		
-		else {
-			System.out.print("Este triângulo é obtusângulo!");
-		}
-		
-		input.close();
-	}
-}

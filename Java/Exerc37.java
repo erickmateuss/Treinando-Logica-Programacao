@@ -1,32 +1,4 @@
-package aula01;
+//Deve perguntar o valor de uma compra √© dependendo o valor menor que 10, o lucro ser√° 70%
+// menor que 30, o lucro ser√° 50%, menor que 50, o lucro ser√° 40%, maior que 50, o lucro ser√° 30%
 
-import java.util.Scanner;
 
-public class Exerc37 {
-	public static void main(String[] args) {
-		Scanner input = new Scanner(System.in);
-		
-		float valorCompra;
-		
-		System.out.print("Digite o valor da compra: ");
-		valorCompra = input.nextFloat();
-		
-		if (valorCompra < 10) {
-			System.out.print("O seu lucro ser· de 70%, portanto o valor da venda ser· de: " + (valorCompra + valorCompra * 0.7) + " reais.");
-		}
-		
-		else if (valorCompra < 30) {
-			System.out.print("O seu lucro ser· de 50%, portanto o valor da venda ser· de: " + (valorCompra + valorCompra * 0.5) + " reais.");
-		}
-		
-		else if (valorCompra < 50) {
-			System.out.print("O seu lucro ser· de 40%, portanto o valor da venda ser· de: " + (valorCompra + valorCompra * 0.4) + " reais.");
-		}
-		
-		else {
-			System.out.print("O seu lucro ser· de 30%, portanto o valor da venda ser· de: " + (valorCompra + valorCompra * 0.3) + " reais.");
-		}
-		
-		input.close();
-	}
-}

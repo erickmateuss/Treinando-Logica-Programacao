@@ -1,32 +1,40 @@
-// Escrever um programa que receba dois n˙meros e ao final mostre a soma, subtraÁ„o, multiplicaÁ„o e a divis„o dos n˙meros lidos.
+// Escrever um programa que receba dois nÔøΩmeros e ao final mostre a soma,
+// subtraÔøΩÔøΩo, multiplicaÔøΩÔøΩo e a divisÔøΩo dos nÔøΩmeros lidos.
+
 
 package aula01;
 
-import java.util.Scanner; 
+import java.util.*;
 
 public class Exerc1 {
 
 	public static void main(String[] args) {
-		 Scanner input = new Scanner(System.in);   
-		 
-		 int x, y; // primeiro n˙mero e segundo n˙mero 
-		 int soma, subt, div, mult; // operaÁıes  
-		 
-		 System.out.print("Digite o primeiro n˙mero:" );   
-		 x = input.nextInt();   
-		 System.out.print("Digite o segundo n˙mero:" );   
-		 y = input.nextInt();   
-		 
-		 soma = x + y;   
-		 subt = x - y;   
-		 div = x / y;   
-		 mult = x * y;   
-		 
-		 System.out.println("A soma È:" +soma);   
-		 System.out.println("A subtraÁ„o È:" +subt);               
-		 System.out.println("A divis„o È:" +div);               
-		 System.out.println("A multiplicaÁ„o È:" +mult); 
-		 
-		 input.close();
-	}
+
+		Scanner sc = new Scanner(System.in);
+
+
+		System.out.println("Digite o primeiro n√∫mero: ");
+		int number1 = sc.nextInt();
+		System.out.println("Digite o segundo n√∫mero: ");
+		int number2 = sc.nextInt();
+
+		int soma = number1 + number2;
+
+		int  subtracao;
+		if(number1 > number2) {
+			subtracao = number1 - number2;
+		}else
+			subtracao = number2 - number1;
+
+		int  multiplicacao = number1 * number2;
+
+		double divisao = ((double) number1 / number2);
+
+
+		System.out.println("A soma entre os n√∫mero " + number1 + " mais o n√∫mero " + number2 + " √© igual a " + soma);
+		System.out.println("A subtra√ß√£o entre os n√∫mero " + number1 + " mais o n√∫mero " + number2 + " √© igual a " + subtracao);
+		System.out.println("A multiplica√ß√£o entre os n√∫mero " + number1 + " mais o n√∫mero " + number2 + " √© igual a " + multiplicacao);
+		System.out.println("A divis√£o entre os n√∫mero " + number1 + " mais o n√∫mero " + number2 + " √© igual a " + divisao);
+
+    }
 }
