@@ -8,36 +8,3 @@
 */
 
 
-import java.util.Scanner;
-
-public class Main
-{
-    public static void main(String[] args) {
-		Scanner input = new Scanner(System.in);
-		
-		int AnoNascimento, AnoAtual, Idade;
-        AnoAtual=2022;
-    
-        System.out.println("Digite o Ano de Nascimento :");
-        AnoNascimento =input.nextInt();
-        
-         Idade= AnoAtual - AnoNascimento;
-        
-        if (Idade >=16){
-            System.out.println("Você está apto para votar :");}
-            
-            else{
-                System.out.println("Você não estará apto para votar :");}
-                
-        
-        System.out.printf("você tem" + Idade + "anos de idade\n");
-
-                
-        System.out.println("**FIM DO PROGRAMA**");        
-                
-		input.close();
-            
-         
-    }
-
-}

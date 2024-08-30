@@ -13,32 +13,3 @@
 */
 
 
-import java.util.Scanner;
-
-public class Main
-{
-    public static void main(String[] args) {
-        Scanner input = new Scanner(System.in);
-		
-		double SCarlos, SJoao;
-		int meses;
-		
-		meses = 1;
-		
-		System.out.print("Digite o valor do salário de Carlos: ");
-		SCarlos = input.nextDouble();
-		
-		SJoao = SCarlos / 3;
-
-		while (SJoao <= SCarlos) {
-			SCarlos = SCarlos * 1.02;
-			SJoao = SJoao * 1.05;
-			meses=meses +1; }
-		
-		System.out.print("João levará " +meses+" meses para acumular aproximadamente a mesma quantia de Carlos");
-	
-		
-		input.close();
-
-    }
-}

@@ -8,27 +8,3 @@
         
 */
 
-import java.util.Scanner;
-
-public class Main
-{
-    public static void main(String[] args) {
-        Scanner input = new Scanner(System.in); 
-		
-	float valorProduto;
-		
-		System.out.print("Digite o valor do produto: ");
-		valorProduto = input.nextFloat();
-		
-		if (valorProduto < 20) {
-			System.out.print("O valor de venda será de " + (valorProduto + valorProduto * 0.45) + " reais.");
-		}
-		
-		else {
-			System.out.print("O valor de venda será de " + (valorProduto + valorProduto * 0.30) + " reais.");
-		}
-		input.close();
-
-
-    }
-}

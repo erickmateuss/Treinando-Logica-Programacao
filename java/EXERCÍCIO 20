@@ -8,29 +8,3 @@
 */
 
 
-import java.util.Scanner;
-
-public class Main
-{
-    public static void main(String[] args) {
-		Scanner input = new Scanner(System.in);
-		
-		short senha;
-		
-		System.out.print("Digite a senha de acesso: ");
-		senha = input.nextShort();
-		
-		if (senha == 1234) {
-			System.out.println("Acesso permitido!"); }
-		
-		else {
-			System.out.println("Acesso negado!");
-		}
-		
-		System.out.print("**FIM DO PROGRAMA**");
-		
-		input.close();
-         
-    }
-
-}
