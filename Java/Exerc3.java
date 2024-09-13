@@ -17,6 +17,9 @@ public class Exerc3 {
             System.out.println("O número " + numero + " é maior que 20!");
         }else
             System.out.println("O número " + numero + " é menor que 20!");
+
+
+        sc.close();
     }
 
 }

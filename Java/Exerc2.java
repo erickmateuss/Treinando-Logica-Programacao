@@ -23,7 +23,7 @@ public  class Exerc2 {
 
         System.out.printf("O consumo médio do automóvel é %.2f km/l1%n", consumoMedio);
 
-
+        sc.close();
 
     }
 }

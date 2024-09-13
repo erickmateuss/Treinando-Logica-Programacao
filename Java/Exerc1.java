@@ -36,5 +36,7 @@ public class Exerc1 {
 		System.out.println("A multiplicação entre os número " + number1 + " mais o número " + number2 + " é igual a " + multiplicacao);
 		System.out.println("A divisão entre os número " + number1 + " mais o número " + number2 + " é igual a " + divisao);
 
+
+		sc.close();
     }
 }
